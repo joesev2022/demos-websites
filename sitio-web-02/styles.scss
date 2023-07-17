@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+button {
+    background-color: #fbc787;
+    border-radius: 3px;
+    padding: 5px 20px;
+    border: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+    background-color: #cab056;
+
+    .caja-1 {
+        padding: 20px;
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        background-color: red;
+        align-items: center;
+        
+        &.cambiado {
+            background-color: green;
+        
+            h1,
+            p {
+                color: #fff;
+            }
+        
+            button {
+                background-color: #fff;
+                color: #f00;
+            }
+        }
+    }
+
+    .caja-2 {
+        padding: 20px;
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        background-color: blue;
+        align-items: center;
+        &.cambiado {
+            background-color: black;
+        
+            h1,
+            p {
+                color: #fff;
+            }
+        
+            button {
+                background-color: #fff;
+                color: #f00;
+            }
+        }
+    }
+}
